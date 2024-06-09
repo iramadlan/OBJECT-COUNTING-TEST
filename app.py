@@ -5,6 +5,7 @@ import cv2
 from ultralytics import YOLO
 import gdown
 from tempfile import NamedTemporaryFile
+import sys
 
 # Mock implementation of ObjectCounter
 class MockObjectCounter:
