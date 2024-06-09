@@ -1,5 +1,26 @@
 
 import os
+import subprocess
+
+# Function to install packages
+def install_packages(packages):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", *packages])
+
+# List of packages to install
+packages = [
+    "streamlit",
+    "gdown",
+    "ultralytics",
+    "opencv-python-headless",
+    "opencv-contrib-python-headless",
+    "shapely",
+    "lap==0.4.0"
+]
+
+# Install packages
+install_packages(packages)
+
+import os
 import streamlit as st
 import cv2
 from ultralytics import YOLO
