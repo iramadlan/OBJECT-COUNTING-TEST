@@ -13,14 +13,12 @@ packages = [
     "ultralytics",
     "opencv-python-headless",
     "opencv-contrib-python-headless",
-    "shapely",
-    "lap==0.4.0"
+    "shapely"
 ]
 
 # Install packages
 install_packages(packages)
 
-import os
 import streamlit as st
 import cv2
 from ultralytics import YOLO
